@@ -2,7 +2,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Home from './Home';
@@ -62,24 +61,12 @@ export default function VerticalTabs() {
       >
        
         <Tab label="Home" {...a11yProps(0)} />
-      
-        <Link href="/categories">
         <Tab label="Categories" {...a11yProps(1)} />
-        </Link>
-        <Link href="/items">
-        <Tab label="Items" {...a11yProps(2)} />
-        </Link>
-        <Link href="/hotdeals">
+        <Tab label="Cart" {...a11yProps(2)} />
         <Tab label="Hot Deals" {...a11yProps(3)} />
-        </Link>
-        <Link href="/favourite">
         <Tab label="Favourite" {...a11yProps(4)} />
-        </Link>
-        <Link href="/profile">
-        <Tab label="Profile" {...a11yProps(5)} />
-        </Link>
-          
-            <Tab label="Create Account" {...a11yProps(6)} ></Tab>
+        <Tab label="Messanger" {...a11yProps(5)} />
+        <Tab label="Create Account" {...a11yProps(6)} ></Tab>
          
         
       </Tabs>
@@ -87,14 +74,19 @@ export default function VerticalTabs() {
         <Home />
       </TabPanel>
       <TabPanel value={value} index={1}>
+        <h1>Categories</h1>
       </TabPanel>
       <TabPanel value={value} index={2}>
+        <h1>Cart</h1>
       </TabPanel>
       <TabPanel value={value} index={3}>
+        <h1>Hot Deals</h1>
       </TabPanel>
       <TabPanel value={value} index={4}>
+        <h1>Favourite</h1>
       </TabPanel>
       <TabPanel value={value} index={5}>
+        <h1>Messanger</h1>
       </TabPanel>
       <TabPanel value={value} index={6}>
         <SignUp />
