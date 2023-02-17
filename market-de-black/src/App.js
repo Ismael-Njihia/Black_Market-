@@ -1,10 +1,19 @@
 import './App.css';
-import SignUp from './Pages/SignUp';
+import VerticalTabs from './VerticalTabs';
 function App() {
   return (
     <>
-      
-      <SignUp />
+    <VerticalTabs/>
+     {/* <BrowserRouter>
+       
+      <Routes>
+         
+        
+      <Route exact path="/" element={<Home />} />
+      <Route path='/signup' element= {<SignUp/>} />
+        
+    </Routes>
+    </BrowserRouter> */}
     </>
   );
 }
