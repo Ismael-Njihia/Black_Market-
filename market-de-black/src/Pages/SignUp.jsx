@@ -16,10 +16,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 function Copyright(props) {
     return (
       <Typography variant="body2" color="text.secondary" align="center" {...props}>
-        {'Copyright © '}
-        <Link color="inherit" href="https://mui.com/">
+        {'Copyright © Market De Black '}
+        {/* <Link color="inherit" href="https://mui.com/">
           Your Website
-        </Link>{' '}
+        </Link>{' '} */}
         {new Date().getFullYear()}
         {'.'}
       </Typography>
@@ -39,9 +39,9 @@ const SignUp = () => {
         };
   return (
     <ThemeProvider theme={theme}>
-    <Grid container component="main" sx={{ height: '100vh' }}>
+    <Grid container component="main" sx={{ height: '20vh' }}>
       <CssBaseline />
-      <Grid
+      {/* <Grid
         item
         xs={false}
         sm={4}
@@ -54,8 +54,8 @@ const SignUp = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-      />
-      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      /> */}
+      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={16} square>
         <Box
           sx={{
             my: 8,
